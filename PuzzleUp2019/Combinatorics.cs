@@ -10,9 +10,9 @@ namespace PuzzleUp2019
         {
         }
 
-        public void GenerateAllTuples<T>(T[] alphabet,int tupleLength,Action<T[]> onTupleDone)
+        public void GenerateAllTuples<T>(T[] alphabet,int tupleLength,Action<T[]> onTupleDone,Func<T,int,T[],bool> itemAddCheck)
         {
-            recurseTupleBuild(new T[tupleLength],0, alphabet,tupleLength,onTupleDone,new Dictionary<T,bool>(),true,(item,count,partial)=>true );
+            recurseTupleBuild(new T[tupleLength],0, alphabet,tupleLength,onTupleDone,new Dictionary<T,bool>(),true,itemAddCheck );
         }
         internal void GenerateCombinations<T>(T[] items,int comboLength,Action<T[]> onCombinationFound,Func<T,int,T[],bool> itemAddCheck )
         {
