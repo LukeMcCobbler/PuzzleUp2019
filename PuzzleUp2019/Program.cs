@@ -9,7 +9,7 @@ namespace PuzzleUp2019
     {
         static void Main(string[] args)
         {
-            new Question03().Run();
+            new Question04().Run();
             return;
         }
 

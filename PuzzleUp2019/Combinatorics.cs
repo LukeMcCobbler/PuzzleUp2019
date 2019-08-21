@@ -26,7 +26,7 @@ namespace PuzzleUp2019
             }
             else
             {
-                foreach(var item in alphabet.Where(itm=>itemAddCheck(itm,currentLength,workArea) ).Where(itm=>allowRepetition|| !usage[itm]  ))
+                foreach(var item in alphabet.Where(itm=>allowRepetition|| !usage[itm]  ).Where(itm=>itemAddCheck(itm,currentLength,workArea) ))
                 {
                     workArea[currentLength]=item;
                     usage[item]=true;
