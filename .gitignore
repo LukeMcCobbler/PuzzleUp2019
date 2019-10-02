@@ -16,3 +16,5 @@ PuzzleUp2019/obj/Debug/netcoreapp2.1/PuzzleUp2019.assets.cache
 PuzzleUp2019/obj/Debug/netcoreapp2.1/PuzzleUp2019.csproj.CoreCompileInputs.cache
 PuzzleUp2019/obj/Debug/netcoreapp2.1/PuzzleUp2019.csproj.FileListAbsolute.txt
 PuzzleUp2019/obj/Debug/netcoreapp2.1/PuzzleUp2019.csprojAssemblyReference.cache
+/.vs
+/PuzzleUp2019/obj

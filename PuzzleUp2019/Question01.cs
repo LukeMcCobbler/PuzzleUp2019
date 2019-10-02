@@ -39,7 +39,7 @@ namespace PuzzleUp2019
                 envelopments.Add(x);
             }, checkWrongEnvelope);
             //Console.WriteLine(String.Join("\r\n", envelopments));
-            c.GenerateCombinations(envelopments.ToArray(), letterCount, tuple =>
+            c.GeneratePermutations(envelopments.ToArray(), letterCount, tuple =>
             {
                 var y = string.Join(",", tuple);
                 //Console.WriteLine(y);

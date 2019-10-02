@@ -17,7 +17,7 @@ namespace PuzzleUp2019
             var consonantEnders = new HashSet<int>() { 4, 6, 7, 8 };
             var digits = Enumerable.Range(0, 10).ToArray();
             var results = new List<int>();
-            new Combinatorics().GenerateCombinations(digits, 10, result => { return; }, (addCandidate, position, partialSolution) =>
+            new Combinatorics().GeneratePermutations(digits, 10, result => { return; }, (addCandidate, position, partialSolution) =>
                    {
                        var candidate = new int[] { addCandidate };
                        if (position >= 2 && !checkVowelStarters(partialSolution.Skip(position - 2).Take(2).Concat(candidate), vowelStarters))

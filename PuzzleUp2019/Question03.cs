@@ -34,7 +34,7 @@ namespace PuzzleUp2019
         internal void Run()
         {
             var allDistinctRots = new List<List<int>>();
-            new Combinatorics().GenerateCombinations(rotDigits.Keys.ToArray(), 7, partialSolution => { return; },
+            new Combinatorics().GeneratePermutations(rotDigits.Keys.ToArray(), 7, partialSolution => { return; },
             (item, partialSolLength, partialSol) =>
             {
                 if (partialSolLength > 0 && !partialSol.Take(partialSolLength).Any(dgt => dgt == item))
