@@ -22,8 +22,7 @@ namespace PuzzleUp2019
             public int CompareTo(object obj)
             {
                 var target = (coord)obj;
-                return y.CompareTo(target.y) == 0 ? x.CompareTo(target.x) : y.CompareTo(target.y);
-                throw new NotImplementedException();
+                return y.CompareTo(target.y) == 0 ? x.CompareTo(target.x) : y.CompareTo(target.y);                
             }
 
             public override string ToString()
