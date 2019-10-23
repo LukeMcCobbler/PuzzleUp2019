@@ -81,7 +81,28 @@ namespace PuzzleUp2019
             return true;
 
         }
+        private bool checkAnyCandidate(coord candidateQueen, coord[] existingQueens)
+        {
+            if(existingQueens.Any(exist=>exist.x==candidateQueen.x))
+            {
+                return false;
+            }
+            if (existingQueens.Any(exist => exist.y == candidateQueen.y))
+            {
+                return false;
+            }
+            if (existingQueens.Any(exist => exist.y+exist.x == candidateQueen.y+candidateQueen.x))
+            {
+                return false;
+            }
+            if (existingQueens.Any(exist => exist.y - exist.x == candidateQueen.y - candidateQueen.x))
+            {
+                return false;
+            }
 
+            return true;
+
+        }
         private coord getCoord(int ordinal, int boardSize)
         {
             var col = ordinal % boardSize;
