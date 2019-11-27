@@ -21,6 +21,7 @@ namespace PuzzleUp2019
             var solutions=new List<string>();
             int boardSize = 5;
             var rowPlacements = new int[] { 1, 2, 19, 4, 21, 22, 7, 8, 25, 26, 11, 28, 13, 14, 31, 16 };
+            //var rowPlacements = new int[] { 8,1, 2, 11, 4, 13, 14, 7};
             //var rowPlacements = new int[] { 1, 2, 4, 7};
             var pawnPlacements = rowPlacements.Select(encoded => new pawnPlacement()
             {
